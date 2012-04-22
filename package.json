@@ -1,0 +1,13 @@
+{
+    "name": "sm",
+    "version": "0.1.0",
+    "description": "sm",
+    "bin": {
+        "sm": "./bin/sm"
+    },
+    "dependencies": {
+        "sourcemint-pinf-js": "0.1.x",
+        "sourcemint-util-js": "0.1.x",
+        "sourcemint-pm-sm": "0.1.x"
+    }
+}
