@@ -1,11 +1,36 @@
 {
     "name": "sm",
     "version": "0.1.7",
-    "description": "sm",
+    "license": "MIT",
+    "author": "Christoph Dorn <christoph@christophdorn.com> (http://christophdorn.com)",
+    "maintainers": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://christophdorn.com"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Christoph Dorn",
+            "email": "christoph@christophdorn.com",
+            "web": "http://christophdorn.com"
+        }
+    ],
+    "bugs": {
+        "email": "sourcemint@googlegroups.com",
+        "url": "https://github.com/sourcemint/sm-npm/issues"
+    },
+    "homepage": "https://github.com/sourcemint/sm-npm",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sourcemint/sm-npm.git"
+    },
     "pm": "npm",
     "engines": {
         "node": ">= 0.6.15"
     },
+    "preferGlobal": true,
     "bin": {
         "sm": "./bin/sm"
     },
