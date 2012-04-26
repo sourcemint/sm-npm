@@ -1,6 +1,6 @@
 {
     "name": "sm",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "sm",
     "engines": {
         "node": ">= 0.6.15"
