@@ -2,6 +2,7 @@
     "name": "sm",
     "version": "0.1.1",
     "description": "sm",
+    "pm": "npm",
     "engines": {
         "node": ">= 0.6.15"
     },
