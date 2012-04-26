@@ -2,6 +2,9 @@
     "name": "sm",
     "version": "0.1.0",
     "description": "sm",
+    "engines": {
+        "node": ">= 0.6.15"
+    },
     "bin": {
         "sm": "./bin/sm"
     },
