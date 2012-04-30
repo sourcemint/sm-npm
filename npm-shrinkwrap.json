@@ -1,12 +1,12 @@
 {
   "name": "sm",
-  "version": "0.1.58",
+  "version": "0.1.59",
   "dependencies": {
     "sourcemint-pinf-js": {
       "version": "0.1.6"
     },
     "sourcemint-util-js": {
-      "version": "0.1.22",
+      "version": "0.1.23",
       "dependencies": {
         "n-util": {
           "version": "0.0.1"
@@ -44,7 +44,7 @@
       }
     },
     "sourcemint-pm-sm": {
-      "version": "0.1.18",
+      "version": "0.1.19",
       "dependencies": {
         "sourcemint-pm-git": {
           "version": "0.1.15"
@@ -53,7 +53,7 @@
           "version": "0.1.1"
         },
         "sourcemint-pm-npm": {
-          "version": "0.1.12",
+          "version": "0.1.13",
           "dependencies": {
             "semver": {
               "version": "1.0.13"
@@ -64,7 +64,7 @@
           "version": "0.1.1"
         },
         "sourcemint-pm-tar": {
-          "version": "0.1.4",
+          "version": "0.1.5",
           "dependencies": {
             "tar": {
               "version": "0.1.13",
