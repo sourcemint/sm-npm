@@ -56,7 +56,7 @@ EXEC("which sm", function(err, stdout, stderr) {
                 TERM.stderr.writenl(" !");
                 TERM.stderr.writenl(" !      2) Update ownership yourself:");
                 TERM.stderr.writenl(" !");
-                TERM.stderr.writenl(" !          chown -Rf " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath);
+                TERM.stderr.writenl(" !          sudo chown -Rf " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath);
                 TERM.stderr.writenl(" !");
                 TERM.stderr.writenl(" Letting script exit with 0 even though setup is not ideal.\0)");
 
