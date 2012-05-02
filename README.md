@@ -11,6 +11,12 @@ The sourcemint `sm` command delivered via [NPM](http://npmjs.org/).
   * Sponsor: [Sourcemint](http://sourcemint.com/)
   * Mailing list: [groups.google.com/group/sourcemint](http://groups.google.com/group/sourcemint)
 
+Requirements
+============
+
+  * [NodeJS](http://nodejs.org) `>= 0.6.15`
+  * [NPM](http://npmjs.org) `>= 1.1.16`
+
 
 Install
 =======

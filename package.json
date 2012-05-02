@@ -29,7 +29,8 @@
     },
     "pm": "npm",
     "engines": {
-        "node": ">= 0.6.15"
+        "node": ">= 0.6.15",
+        "npm": ">= 1.1.16"
     },
     "preferGlobal": true,
     "bin": {
