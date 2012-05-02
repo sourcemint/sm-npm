@@ -39,14 +39,14 @@ EXEC("which sm", function(err, stdout, stderr) {
             TERM.stdout.writenl("\0cyan(`sm` was installed with sudo. Changing ownership of all files to user: " + process.env.SUDO_USER + "\0)");
             
             var sourcePath = PATH.join(__dirname, "..");
-            
+/*            
             TERM.stdout.writenl("\0cyan(chown " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + binPath + "\0)");
             try {
                 FS.chownSync(binPath, parseInt(process.env.SUDO_UID), parseInt(process.env.SUDO_GID));
             } catch(e) {
                 // silence. not sure if really necessary.
             }
-
+*/
             TERM.stdout.writenl("\0cyan(chown -R " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath + "\0)");
             EXEC("chown -R " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath, function(err, stdout, stderr) {
                 if (err) {
