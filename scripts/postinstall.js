@@ -7,10 +7,11 @@ const EXEC = require("child_process").exec;
 const ERROR = require("sourcemint-util-js/lib/error");
 
 
+TERM.stderr.writenl("\0yellow(Running as UID: " + process.getuid() + "\0)");
+TERM.stderr.writenl("\0yellow(Running as GID: " + process.getgid() + "\0)");
 
 EXEC("which sm", function(err, stdout, stderr) {
     if (err) {
-        console.error("ERROR: Could not find `sm` on your PATH (" + process.env.PATH + ")! NPM should have installed it.");
         TERM.stderr.writenl("\0red(ERROR: Could not find `sm` on your PATH (" + process.env.PATH + ")! NPM should have installed it.\0)");
         process.exit(1);
         return;
@@ -20,7 +21,6 @@ EXEC("which sm", function(err, stdout, stderr) {
     
     EXEC(binPath + " --version", function(err, stdout, stderr) {
         if (err) {
-            console.error("ERROR: '" + err + "' while running `" + binPath + " --version" + "`: " + stderr);
             TERM.stderr.writenl("\0red(ERROR: '" + err + "' while running `" + binPath + " --version" + "`: " + stderr + "\0)");
             process.exit(1);
             return;
@@ -29,7 +29,6 @@ EXEC("which sm", function(err, stdout, stderr) {
         var installedVersion = stdout.replace(/\n$/, "");
         
         if (installedVersion !== process.env.npm_package_version) {
-            console.error("ERROR: Installed `sm` at `which sm` (" + binPath + ") has version '" + installedVersion + "' which is NOT the version '" + process.env.npm_package_version + "' we just installed!");
             TERM.stderr.writenl("\0red(ERROR: Installed `sm` at `which sm` (" + binPath + ") has version '" + installedVersion + "' which is NOT the version '" + process.env.npm_package_version + "' we just installed!\0)");
             process.exit(1);
             return;
@@ -39,7 +38,7 @@ EXEC("which sm", function(err, stdout, stderr) {
             typeof process.env.SUDO_UID === "string" && 
             typeof process.env.SUDO_GID === "string") {
             
-            TERM.stdout.writenl("\0cyan(`sm` was installed with sudo. Changing ownership of all files to user: " + process.env.SUDO_USER + "\0)");
+            TERM.stdout.writenl("\0cyan(`sm` was installed with sudo. Changing ownership of all files to user: " + process.env.SUDO_USER + " (" + process.env.SUDO_UID + ":" + process.env.SUDO_GID + ")\0)");
             
             var sourcePath = PATH.join(__dirname, "..");
 /*            
@@ -50,10 +49,9 @@ EXEC("which sm", function(err, stdout, stderr) {
                 // silence. not sure if really necessary.
             }
 */
-            TERM.stdout.writenl("\0cyan(chown -R " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath + "\0)");
+            TERM.stdout.writenl("\0cyan(chown -fR " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath + "\0)");
             EXEC("chown -R " + process.env.SUDO_UID + ":" + process.env.SUDO_GID + " " + sourcePath, function(err, stdout, stderr) {
                 if (err) {
-                    console.error("ERROR: '" + err + "' while chowning files!");
                     TERM.stderr.writenl("\0red(ERROR: '" + err + "' while chowning files!\0)");
                     process.exit(1);
                     return;
