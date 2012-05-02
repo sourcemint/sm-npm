@@ -18,6 +18,9 @@ Install
     npm install -g sm
 
 
+Usage
+=====
+
     sm -h
     
     ------------------ sourcemint.org ------------------
