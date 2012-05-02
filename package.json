@@ -40,5 +40,8 @@
         "sourcemint-util-js": "0.1.x",
         "sourcemint-pm-sm": "0.1.x"
     },
-    "shrinkwrap": true
+    "shrinkwrap": true,
+    "scripts": {
+        "postinstall": "node ./scripts/postinstall.js"
+    }
 }
