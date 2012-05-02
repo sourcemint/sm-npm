@@ -1,7 +1,7 @@
 {
     "name": "sm",
     "description": "Sourcemint Open Source Tooling ~ Package Management. Evolved.",
-    "version": "0.1.68",
+    "version": "0.1.69",
     "license": "MIT",
     "author": "Christoph Dorn <christoph@christophdorn.com> (http://christophdorn.com)",
     "maintainers": [
