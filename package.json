@@ -36,6 +36,7 @@
     "bin": {
         "sm": "./bin/sm"
     },
+    "main": "./lib/sm.js",
     "dependencies": {
         "sourcemint-pinf-js": "0.1.x",
         "sourcemint-util-js": "0.1.x",
