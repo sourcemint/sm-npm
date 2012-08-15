@@ -1,6 +1,6 @@
 {
   "name": "sm",
-  "version": "0.1.76",
+  "version": "0.2.0",
   "dependencies": {
     "sourcemint-pinf-js": {
       "version": "0.1.6"
@@ -53,12 +53,7 @@
           "version": "0.1.1"
         },
         "sourcemint-pm-npm": {
-          "version": "0.1.16",
-          "dependencies": {
-            "semver": {
-              "version": "1.0.13"
-            }
-          }
+          "version": "0.1.16"
         },
         "sourcemint-pm-zip": {
           "version": "0.1.1"
