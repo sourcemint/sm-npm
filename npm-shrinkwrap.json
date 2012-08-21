@@ -1,6 +1,6 @@
 {
   "name": "sm",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "dependencies": {
     "sourcemint-pinf-js": {
       "version": "0.1.7"
@@ -48,10 +48,10 @@
       }
     },
     "sourcemint-pm-sm": {
-      "version": "0.1.31",
+      "version": "0.1.32",
       "dependencies": {
         "sourcemint-pm-git": {
-          "version": "0.1.21"
+          "version": "0.1.22"
         },
         "sourcemint-pm-url": {
           "version": "0.1.2"
@@ -98,10 +98,10 @@
           }
         },
         "sourcemint-deployer": {
-          "version": "0.1.3",
+          "version": "0.1.4",
           "dependencies": {
             "sourcemint-sdk-aws": {
-              "version": "0.1.3",
+              "version": "0.1.4",
               "dependencies": {
                 "aws-lib": {
                   "version": "0.0.6",
