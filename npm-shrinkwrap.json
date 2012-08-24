@@ -1,12 +1,12 @@
 {
   "name": "sm",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "dependencies": {
     "sourcemint-pinf-js": {
       "version": "0.1.7"
     },
     "sourcemint-util-js": {
-      "version": "0.1.52",
+      "version": "0.1.53",
       "dependencies": {
         "n-util": {
           "version": "0.0.1"
