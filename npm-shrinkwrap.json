@@ -1,6 +1,6 @@
 {
   "name": "sm",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "dependencies": {
     "sourcemint-pinf-js": {
       "version": "0.1.7"
@@ -101,7 +101,7 @@
           "version": "0.1.5",
           "dependencies": {
             "sourcemint-sdk-aws": {
-              "version": "0.1.5",
+              "version": "0.1.6",
               "dependencies": {
                 "aws-lib": {
                   "version": "0.0.6",
