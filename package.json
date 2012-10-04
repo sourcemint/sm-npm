@@ -40,7 +40,8 @@
     "dependencies": {
         "sourcemint-pinf-js": "0.1.x",
         "sourcemint-util-js": "0.1.x",
-        "sourcemint-pm-sm": "0.1.x"
+        "sourcemint-pm-sm": "0.1.x",
+        "semver": "1.x"
     },
     "shrinkwrap": true,
     "scripts": {
