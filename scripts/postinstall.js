@@ -19,7 +19,7 @@ INSTALL_COMMAND.install(function(err, commandPath) {
             "",
             "******************************************************************************************\0)"
         ].join("\n"));
-        return CLI.failAndExit(true);
+        return; // CLI.failAndExit(true);
     }
     TERM.stderr.writenl([
         "",
