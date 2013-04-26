@@ -3,93 +3,134 @@
   "version": "0.2.11",
   "dependencies": {
     "sourcemint-pinf-js": {
-      "version": "0.1.7"
+      "version": "0.1.7",
+      "from": "sourcemint-pinf-js@0.1.7"
     },
     "sourcemint-util-js": {
-      "version": "0.1.53",
+      "version": "0.1.54",
+      "from": "sourcemint-util-js@0.1.x",
       "dependencies": {
         "n-util": {
-          "version": "0.0.1"
+          "version": "0.0.1",
+          "from": "n-util@0.0.x"
         },
         "q": {
-          "version": "0.8.5"
+          "version": "0.8.5",
+          "from": "q@0.8.5"
         },
         "glob": {
-          "version": "3.1.12",
+          "version": "3.2.1",
+          "from": "glob@3.x",
           "dependencies": {
             "minimatch": {
-              "version": "0.2.6",
+              "version": "0.2.12",
+              "from": "minimatch@~0.2.11",
               "dependencies": {
                 "lru-cache": {
-                  "version": "2.0.1"
+                  "version": "2.3.0",
+                  "from": "lru-cache@2"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0"
                 }
               }
             },
             "graceful-fs": {
-              "version": "1.1.10"
+              "version": "1.2.0",
+              "from": "graceful-fs@~1.2.0"
             },
             "inherits": {
-              "version": "1.0.0"
+              "version": "1.0.0",
+              "from": "inherits@1"
             }
           }
         },
         "wrench": {
-          "version": "1.3.9"
+          "version": "1.4.4",
+          "from": "wrench@1.x"
         },
         "console-trace": {
-          "version": "0.1.0",
-          "from": "https://github.com/LearnBoost/console-trace/tarball/8a54bf706d001f1eef166b99391e952e4be10982",
+          "version": "0.2.1",
+          "from": "console-trace@0.2.x",
           "dependencies": {
             "callsite": {
-              "version": "0.0.2"
+              "version": "1.0.0",
+              "from": "callsite@*"
             }
           }
+        },
+        "tunnel": {
+          "version": "0.0.2",
+          "from": "tunnel@0.0.x"
+        },
+        "waitfor": {
+          "version": "0.1.3",
+          "from": "waitfor@0.1.x",
+          "dependencies": {
+            "setimmediate": {
+              "version": "1.0.1",
+              "from": "setimmediate@~1.0.1"
+            }
+          }
+        },
+        "netutil": {
+          "version": "0.0.1",
+          "from": "netutil@0.0.x"
         }
       }
     },
     "sourcemint-pm-sm": {
       "version": "0.1.33",
+      "from": "sourcemint-pm-sm@0.1.33",
       "dependencies": {
         "sourcemint-pm-git": {
-          "version": "0.1.22"
+          "version": "0.1.22",
+          "from": "sourcemint-pm-git@0.1.22"
         },
         "sourcemint-pm-url": {
-          "version": "0.1.2"
+          "version": "0.1.2",
+          "from": "sourcemint-pm-url@0.1.2"
         },
         "sourcemint-pm-npm": {
           "version": "0.1.19",
-          "dependencies": {
-            "semver": {
-              "version": "1.0.14"
-            }
-          }
+          "from": "sourcemint-pm-npm@0.1.19"
         },
         "sourcemint-pm-zip": {
-          "version": "0.1.1"
+          "version": "0.1.1",
+          "from": "sourcemint-pm-zip@0.1.1"
         },
         "sourcemint-pm-tar": {
           "version": "0.1.6",
+          "from": "sourcemint-pm-tar@0.1.6",
           "dependencies": {
             "tar": {
               "version": "0.1.13",
+              "from": "tar@0.1.13",
               "dependencies": {
                 "inherits": {
-                  "version": "1.0.0"
+                  "version": "1.0.0",
+                  "from": "inherits@1.0.0"
                 },
                 "block-stream": {
-                  "version": "0.0.6"
+                  "version": "0.0.6",
+                  "from": "block-stream@0.0.6"
                 },
                 "fstream": {
                   "version": "0.1.18",
+                  "from": "fstream@0.1.18",
                   "dependencies": {
                     "rimraf": {
-                      "version": "2.0.2"
+                      "version": "2.0.2",
+                      "from": "rimraf@2.0.2"
                     },
                     "mkdirp": {
-                      "version": "0.3.3"
+                      "version": "0.3.3",
+                      "from": "mkdirp@0.3.3"
                     },
                     "graceful-fs": {
-                      "version": "1.1.10"
+                      "version": "1.1.10",
+                      "from": "graceful-fs@1.1.10"
                     }
                   }
                 }
@@ -99,98 +140,130 @@
         },
         "sourcemint-deployer": {
           "version": "0.1.5",
+          "from": "sourcemint-deployer@0.1.5",
           "dependencies": {
             "sourcemint-sdk-aws": {
               "version": "0.1.6",
+              "from": "sourcemint-sdk-aws@0.1.6",
               "dependencies": {
                 "aws-lib": {
                   "version": "0.0.6",
+                  "from": "aws-lib@0.0.6",
                   "dependencies": {
                     "xml2js": {
-                      "version": "0.1.14"
+                      "version": "0.1.14",
+                      "from": "xml2js@0.1.14"
                     },
                     "sax": {
-                      "version": "0.1.5"
+                      "version": "0.1.5",
+                      "from": "sax@0.1.5"
                     }
                   }
                 }
               }
             },
             "sourcemint-pm-rsync": {
-              "version": "0.1.3"
+              "version": "0.1.3",
+              "from": "sourcemint-pm-rsync@0.1.3"
             },
             "sourcemint-pm-ssh": {
-              "version": "0.1.2"
+              "version": "0.1.2",
+              "from": "sourcemint-pm-ssh@0.1.2"
             }
           }
         },
         "mappings": {
-          "version": "0.1.5"
+          "version": "0.1.5",
+          "from": "mappings@0.1.5"
         },
         "semver": {
-          "version": "1.0.14"
+          "version": "1.0.14",
+          "from": "semver@1.0.14"
         },
         "prompt": {
           "version": "0.2.3",
+          "from": "prompt@0.2.3",
           "dependencies": {
             "pkginfo": {
-              "version": "0.2.3"
+              "version": "0.2.3",
+              "from": "pkginfo@0.2.3"
             },
             "read": {
-              "version": "0.1.1"
+              "version": "0.1.1",
+              "from": "read@0.1.1"
             },
             "revalidator": {
-              "version": "0.1.2"
+              "version": "0.1.2",
+              "from": "revalidator@0.1.2"
             },
             "utile": {
               "version": "0.1.3",
+              "from": "utile@0.1.3",
               "dependencies": {
                 "async": {
-                  "version": "0.1.22"
+                  "version": "0.1.22",
+                  "from": "async@0.1.22"
                 },
                 "deep-equal": {
-                  "version": "0.0.0"
+                  "version": "0.0.0",
+                  "from": "deep-equal@0.0.0"
                 },
                 "i": {
-                  "version": "0.3.0"
+                  "version": "0.3.0",
+                  "from": "i@0.3.0"
                 },
                 "mkdirp": {
-                  "version": "0.3.3"
+                  "version": "0.3.3",
+                  "from": "mkdirp@0.3.3"
                 },
                 "ncp": {
-                  "version": "0.2.6"
+                  "version": "0.2.6",
+                  "from": "ncp@0.2.6"
                 },
                 "rimraf": {
-                  "version": "1.0.9"
+                  "version": "1.0.9",
+                  "from": "rimraf@1.0.9"
                 }
               }
             },
             "winston": {
               "version": "0.6.2",
+              "from": "winston@0.6.2",
               "dependencies": {
                 "async": {
-                  "version": "0.1.22"
+                  "version": "0.1.22",
+                  "from": "async@0.1.22"
                 },
                 "colors": {
-                  "version": "0.6.0-1"
+                  "version": "0.6.0-1",
+                  "from": "colors@0.6.0-1"
                 },
                 "cycle": {
-                  "version": "1.0.0"
+                  "version": "1.0.0",
+                  "from": "cycle@1.0.0"
                 },
                 "eyes": {
-                  "version": "0.1.7"
+                  "version": "0.1.7",
+                  "from": "eyes@0.1.7"
                 },
                 "request": {
-                  "version": "2.9.203"
+                  "version": "2.9.203",
+                  "from": "request@2.9.203",
+                  "resolved": "https://registry.npmjs.org/request/-/request-2.9.203.tgz"
                 },
                 "stack-trace": {
-                  "version": "0.0.6"
+                  "version": "0.0.6",
+                  "from": "stack-trace@0.0.6"
                 }
               }
             }
           }
         }
       }
+    },
+    "semver": {
+      "version": "1.1.4",
+      "from": "semver@1.x"
     }
   }
 }
